@@ -9,7 +9,7 @@ import com.example.lesson03.bo.ReviewBO;
 import com.example.lesson03.domain.Review;
 
 @RestController
-public class Lesson03Ex1RestController {
+public class Lesson03Ex01RestController {
 	
 	@Autowired
 	private ReviewBO reviewBO;

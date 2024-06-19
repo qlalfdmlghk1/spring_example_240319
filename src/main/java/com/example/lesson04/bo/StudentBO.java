@@ -15,6 +15,6 @@ public class StudentBO {
 	// input: Student
 	// output: X
 	public void addStudent(Student student) {
-		
+		studentMapper.insertStudent(student);
 	}
 }

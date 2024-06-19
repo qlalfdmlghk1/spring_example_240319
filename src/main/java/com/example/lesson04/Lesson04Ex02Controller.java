@@ -19,7 +19,7 @@ public class Lesson04Ex02Controller {
 	// 학생 가입 화면
 	// http://localhost/lesson04/ex02/add-student-view
 	@GetMapping("/add-student-view")
-	public String addStudentViuw() {
+	public String addStudentView() {
 		return "lesson04/addStudent";
 	}
 	

@@ -23,4 +23,13 @@
 			, NOW()		
 		)
 	</insert>
+	
+	<select id="isDuplicationByName" parameterType="string" resultType="boolean">
+		SELECT
+			COUNT(*)
+		FROM
+			`new_user`
+		WHERE
+			`name` = #{name}
+	</select>
 </mapper>

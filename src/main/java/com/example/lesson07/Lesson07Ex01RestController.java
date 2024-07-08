@@ -23,5 +23,22 @@ public class Lesson07Ex01RestController {
 		String email = "jina@naver.com";
 		String dreamJob = "간호사";
 		
+		return studentBO.addStudent(name, phoneNumber, email, dreamJob);
+	}
+	
+	// U: Update
+	@GetMapping("/update")
+	public StudentEntity update() {
+		// id가 6번인 dreamJob 변경(기획자)
+		return studentBO.updateStudentDreamJobById(6, "기획자");
+	}
+	
+	// D: Delete
+	@GetMapping("/delete")
+	public String delete() {
+		// id가 6번인 데이터 삭제
+		studentBO.deleteStudentById(6);
+		
+		return "삭제 성공";
 	}
 }
